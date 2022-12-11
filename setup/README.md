@@ -1,6 +1,6 @@
 The scripts in this folder automate the setup of the MagAO-X software system on new hardware (to the extent it is possible to automate). The code in this repo is tightly coupled to our choice of operating system (Linux/CentOS 7), as well as the existence of folders, users, groups, and permissions that make the whole thing work.
 
-The main script that calls the others is `provision.sh` for both the physical machines that will be used with the instrument and the VMs used in software development. For usage documentation, consult the [computer setup appendix](https://magao-x.org/docs/handbook/appendices/computer_setup/computer_setup.html) of the [MagAO-X Handbook](https://magao-x.org/docs/handbook/).
+The main script that calls the others is `provision.sh` for both the physical machines that will be used with the instrument and the VMs used in software development. For usage documentation, consult the [computer setup appendix](https://magao-x.org/docs/handbook/compute/computer_setup/computer_setup.html) of the [MagAO-X Handbook](https://magao-x.org/docs/handbook/).
 
 The `provision.sh` script does different things depending on the `MAGAOX_ROLE` environment variable of the machine it's run on. (It makes `/etc/profile.d/magaox_role.sh` to set that the first time you run it.) This can be:
 
